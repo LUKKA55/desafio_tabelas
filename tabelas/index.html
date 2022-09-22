@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="../listas/index.html">listas</a>
+        <a href="#">tabelas</a>
+    </nav>
+
+    <table border="1">
+
+        <caption>Lista de aluno</caption>
+
+        <tr>
+            <th>nome</th>
+            <td>isa</td>
+        </tr>
+        <tr>
+            <th>turma</th>
+            <td>231</td>
+        </tr>
+        <tr>
+            <th>professor</th>
+            <td>antonio</td>
+        </tr>
+    </table>
+<hr>
+    <style>
+        table, th, td{
+            border: 1px solid black; /* tamanho, tipo e cor da borda*/
+            padding: 5px; /* espaçamento interior*/
+            border-collapse: collapse; /* reconhe as bordas, deixa só uma linha*/
+        }
+    </style>
+
+
+    <table style="width: 100%; text-align: center;">
+        <colgroup>
+            <col>
+            <col style="background-color: blue;">
+            <col style="background-color: red;">
+        </colgroup>
+        <caption>
+            <h3>Teste tabela</h3>
+        </caption>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>turma</th>
+                <th>professor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>isa</td>
+                <td>231</td>
+                <td>antonio</td>
+            </tr>
+            <tr>
+                <td>isa</td>
+                <td colspan="2">231</td>
+                
+            </tr>
+            <tr>
+                <td>isa</td>
+                <td>231</td>
+                <td rowspan="2">antonio</td>
+            </tr>
+            <tr>
+                
+                <td>231</td>
+                <td>antonio</td>
+            </tr>
+            
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">olá isa</td>
+            </tr>
+        </tfoot>
+        
+
+    </table>
+
+
+
+
+
+    
+</body>
+</html>
